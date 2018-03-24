@@ -1,0 +1,30 @@
+﻿[
+	{
+		"store_key": [
+			"store_test",
+			"store_test_03",
+			"store_test_11"
+		],
+		"id": "inv-item-0000041",
+		"item_code": "2031",
+		"item_name": "ANCHOVY FLAT IN OLV OIL 25-2Z ROLN",
+		"category": "inv-cat-003",
+		"counting_uoms": [
+			"inv-uom-0060",
+			"inv-uom-0001"
+		],
+		"base_uom": "inv-uom-0001",
+		"reporting_uom": "inv-uom-0060",
+		"status": "Active",
+		"unique_name": "anchovy flat in olv oil 25-2z roln",
+		"order_method": "Forecasting",
+		"safety_stock_type": "Quantity",
+		"safety_stock_uom": "inv-uom-0060",
+		"safety_stock_value": 6,
+		"sys_version": 1,
+		"sys_created_at": "2018-03-23T06:27:39.754Z",
+		"sys_created_by": "kmsalldev",
+		"sys_type_version": 1,
+		"sys_id": "5ab49e5b3d953858cf320096"
+	}
+]

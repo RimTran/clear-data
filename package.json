@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clear": "node clear.js"
+    "clear": "node clear.js",
+    "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",

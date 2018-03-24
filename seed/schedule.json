@@ -1,0 +1,32 @@
+﻿[
+	{
+		"sys_version": 3,
+		"sys_type_version": 1,
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-24T06:44:43.632Z",
+		"store_key": "store_test",
+		"name": "Pull 15:00PM/Mon-Sun",
+		"unique_name": "pull 15:00pm/mon-sun",
+		"status": "Active",
+		"frequencies": [
+			{
+				"days": [
+					"Mon",
+					"Tue",
+					"Wed",
+					"Thu",
+					"Fri",
+					"Sat",
+					"Sun"
+				],
+				"frequency_time": "03:00 PM",
+				"is_thaw": true,
+				"is_prep": true
+			}
+		],
+		"id": "3da57370-d8c0-440e-af15-21ca4593014d",
+		"sys_modified_at": "2018-03-24T06:45:23.117Z",
+		"sys_modified_by": "admin__kms_qa5",
+		"sys_id": "5ab5f3dbc528a4726181b0a0"
+	}
+]

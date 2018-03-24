@@ -1,0 +1,141 @@
+﻿[
+	{
+		"store_key": "store_test",
+		"id": "inv-on-hand-00032",
+		"item_id": "inv-item-0000041",
+		"item_cost": 1.27,
+		"theoretical_on_hand": 33,
+		"forecast": [
+			{
+				"to_date": "2017-12-08T00:00:00.000Z",
+				"quantity": 2,
+				"sale": 2000
+			},
+			{
+				"to_date": "2017-12-09T00:00:00.000Z",
+				"quantity": 4,
+				"sale": 4000
+			},
+			{
+				"to_date": "2017-12-10T00:00:00.000Z",
+				"quantity": 6,
+				"sale": 6000
+			},
+			{
+				"to_date": "2017-12-11T00:00:00.000Z",
+				"quantity": 8,
+				"sale": 8000
+			},
+			{
+				"to_date": "2017-12-12T00:00:00.000Z",
+				"quantity": 10,
+				"sale": 10000
+			},
+			{
+				"to_date": "2017-12-13T00:00:00.000Z",
+				"quantity": 12,
+				"sale": 1200
+			},
+			{
+				"to_date": "2017-12-14T00:00:00.000Z",
+				"quantity": 14,
+				"sale": 1400
+			},
+			{
+				"to_date": "2017-12-15T00:00:00.000Z",
+				"quantity": 16,
+				"sale": 1600
+			},
+			{
+				"to_date": "2017-12-16T00:00:00.000Z",
+				"quantity": 18,
+				"sale": 1800
+			},
+			{
+				"to_date": "2017-12-17T00:00:00.000Z",
+				"quantity": 20,
+				"sale": 2000
+			},
+			{
+				"to_date": "2017-12-18T00:00:00.000Z",
+				"quantity": 22,
+				"sale": 2200
+			},
+			{
+				"to_date": "2017-12-19T00:00:00.000Z",
+				"quantity": 24,
+				"sale": 2400
+			},
+			{
+				"to_date": "2017-12-20T00:00:00.000Z",
+				"quantity": 26,
+				"sale": 2600
+			},
+			{
+				"to_date": "2017-12-21T00:00:00.000Z",
+				"quantity": 28,
+				"sale": 2800
+			},
+			{
+				"to_date": "2017-12-22T00:00:00.000Z",
+				"quantity": 30,
+				"sale": 3000
+			},
+			{
+				"to_date": "2017-12-23T00:00:00.000Z",
+				"quantity": 32,
+				"sale": 3200
+			},
+			{
+				"to_date": "2017-12-24T00:00:00.000Z",
+				"quantity": 34,
+				"sale": 3400
+			},
+			{
+				"to_date": "2017-12-25T00:00:00.000Z",
+				"quantity": 36,
+				"sale": 3600
+			},
+			{
+				"to_date": "2017-12-26T00:00:00.000Z",
+				"quantity": 38,
+				"sale": 3800
+			},
+			{
+				"to_date": "2017-12-27T00:00:00.000Z",
+				"quantity": 40,
+				"sale": 4000
+			},
+			{
+				"to_date": "2017-12-28T00:00:00.000Z",
+				"quantity": 42,
+				"sale": 4200
+			},
+			{
+				"to_date": "2017-12-29T00:00:00.000Z",
+				"quantity": 44,
+				"sale": 4400
+			},
+			{
+				"to_date": "2017-12-30T00:00:00.000Z",
+				"quantity": 46,
+				"sale": 4600
+			},
+			{
+				"to_date": "2017-12-31T00:00:00.000Z",
+				"quantity": 48,
+				"sale": 4800
+			},
+			{
+				"to_date": "2018-01-01T00:00:00.000Z",
+				"quantity": 50,
+				"sale": 5000
+			}
+		],
+		"sys_version": 1,
+		"sys_created_at": "2018-03-23T06:27:39.800Z",
+		"sys_created_by": "kmsallqas",
+		"sys_type_version": 1,
+		"sys_id": "5ab49e5b3d953858cf3200cc"
+	}
+]

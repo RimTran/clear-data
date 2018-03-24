@@ -7,7 +7,11 @@ const BASE_URL = `https://api.bodhi-${env}.io/${namespace}/resources`;
 
 const documents = [
   'ProductionSuggestedThawQuantityJobLog',
-  'ProductionSuggestedThawItemQuantity'
+  'ProductionSuggestedThawItemQuantity',
+  'InventoryItem',
+  'ProductionSchedule',
+  'ProductionItemThawSetup',
+  'InventoryOnHand'
 ];
 
 const clear = ({ resourceName, method = 'DELETE', token }) => axios({
