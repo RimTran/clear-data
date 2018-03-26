@@ -17,18 +17,20 @@ const documents = [
 
 const storeKey = 'store_test_14';
 
-const clear = ({ resourceName, method = 'DELETE', token }) => axios({
-  url: `${BASE_URL}/${resourceName}${buildUrl({
-    queryParams: {
-      storeKey
+const clear = ({ resourceName, method = 'DELETE', token }) => {
+
+  const URL = `${BASE_URL}/${resourceName}?where={"store_key":"${storeKey}"}`;
+  console.log('URL: ', URL);
+  return axios({
+    url: URL,
+
+    method,
+    headers: {
+      'Content-Type': 'application/json',
+      'Cookie': `ID_TOKEN=${token}`
     }
-  })}`,
-  method,
-  headers: {
-    'Content-Type': 'application/json',
-    'Cookie': `ID_TOKEN=${token}`
-  }
-});
+  });
+};
 
 const clearAll = token => documents.map(doc => {
   return clear({
