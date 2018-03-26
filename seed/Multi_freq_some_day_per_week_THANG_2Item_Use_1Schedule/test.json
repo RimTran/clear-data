@@ -1,0 +1,56 @@
+[
+  {
+    $match: {
+      store_key: 'stor
+      e_test_14
+      ',status:'
+      Active
+      '}},{$skip:0},{$limit:100},{$lookup: {from: '
+      InventoryItem
+      ',
+      localField: 'item_id',
+      foreignField: 'id',
+      as: 'item'
+    }
+  },
+  {
+    $unwind: '$item'
+  },
+  {
+    $lookup: {
+      from: 'InventoryCategory',
+      localField: 'item.category',
+      foreignField: 'id',
+      as: 'categor
+      y
+      ',}},{$unwind: '
+      $category
+      '},{$lookup: {from: '
+      InventoryUnitOfMeasure
+      ',localField: '
+      i
+      tem.base_uom
+      ',foreignField: '
+      id
+      ',as: '
+      uom
+      ',}},{$unwind: '
+      $uom
+      '},{$project: {id:1,stor
+      e_key: 1,
+      item_id: 1,
+      thaw_uom: 1,
+      thaw_time: 1,
+      shelf_life: 1,
+      schedule: 1,
+      status: 1,
+      uom.name: 1,
+      category.name: 1,
+      item.item_name: 1,
+      item.counting_uoms: 1,
+      item.base_uom: 1,
+      item.reporting_
+      uom: 1
+    }
+  }
+]

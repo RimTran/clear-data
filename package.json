@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clear": "node clear.js",
-    "seed": "node seed.js",
-    "test": "npm run clear && npm run seed"
   },
   "keywords": [],
   "author": "",

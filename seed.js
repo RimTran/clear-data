@@ -5,7 +5,7 @@ const env = process.env.NODE_ENV || 'qa';
 const namespace = process.env.NAMESPACE || 'kms_qa5';
 const BASE_URL = `https://api.bodhi-${env}.io/${namespace}/resources`;
 
-const dir = './seed/Multi_freq_some_day_per_week_THANG_FIX_BUG';
+const dir = './seed/Multi_freq_some_day_per_week_THANG_2Item_Use_1Schedule';
 
 const documents = [
   {
@@ -44,19 +44,21 @@ const seedAll = token => documents.map(doc => {
   })
 });
 
-getToken({
-  env,
-  username: `admin__${namespace}`,
-  password: `admin__${namespace}`
-}).then((token) => {
-  Promise.all(
-    seedAll(token)
-  ).then(resp => {
-    console.log('========================');
-    console.log('  SEED DONE !!!!!!!!!!!!');
-  }).catch(err => {
-    console.log('err: ', err);
-  });
-}).catch(loginError => {
-  console.log('loginError: ', loginError);
-});
+module.exports = seedAll;
+
+// getToken({
+//   env,
+//   username: `admin__${namespace}`,
+//   password: `admin__${namespace}`
+// }).then((token) => {
+//   Promise.all(
+//     seedAll(token)
+//   ).then(resp => {
+//     console.log('========================');
+//     console.log('  SEED DONE !!!!!!!!!!!!');
+//   }).catch(err => {
+//     console.log('err: ', err);
+//   });
+// }).catch(loginError => {
+//   console.log('loginError: ', loginError);
+// });

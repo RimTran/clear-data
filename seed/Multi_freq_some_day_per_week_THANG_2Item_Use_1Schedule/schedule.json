@@ -1,0 +1,62 @@
+﻿[
+	{
+		"sys_version": 2,
+		"sys_type_version": 1,
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-25T07:21:55.078Z",
+		"store_key": "store_test_14",
+		"name": "Multi_freq_some_day_per_w_THANG_FIX_BUG",
+		"unique_name": "multi_freq_some_day_per_w",
+		"status": "Active",
+		"frequencies": [
+			{
+				"days": [
+					"Sat"
+				],
+				"frequency_time": "09:00 PM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Sat"
+				],
+				"frequency_time": "11:00 PM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Sun",
+					"Wed",
+					"Fri",
+					"Mon",
+					"Tue"
+				],
+				"frequency_time": "01:00 AM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Fri"
+				],
+				"frequency_time": "07:00 AM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Tue"
+				],
+				"frequency_time": "04:00 AM",
+				"is_thaw": true,
+				"is_prep": true
+			}
+		],
+		"id": "schedule-id-thang-001",
+		"sys_modified_at": "2018-03-25T07:25:17.785Z",
+		"sys_modified_by": "admin__kms_qa5",
+		"sys_id": "5ab74e133d953858cf34d85d"
+	}
+]

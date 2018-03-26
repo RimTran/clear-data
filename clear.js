@@ -38,18 +38,20 @@ const clearAll = token => documents.map(doc => {
   });
 });
 
-getToken({
-  env,
-  username: `admin__${namespace}`,
-  password: `admin__${namespace}`
-}).then((token) => {
-  Promise.all(
-    clearAll(token)
-  ).then(resp => {
-    console.log('CLEAR DONE!!!!!!!!!!!!!!!!!!');
-  }).catch(err => {
-    console.log('err: ', err);
-  });
-}).catch(loginError => {
-  console.log('loginError: ', loginError);
-});
+module.exports = clearAll;
+
+// getToken({
+//   env,
+//   username: `admin__${namespace}`,
+//   password: `admin__${namespace}`
+// }).then((token) => {
+//   Promise.all(
+//     clearAll(token)
+//   ).then(resp => {
+//     console.log('CLEAR DONE!!!!!!!!!!!!!!!!!!');
+//   }).catch(err => {
+//     console.log('err: ', err);
+//   });
+// }).catch(loginError => {
+//   console.log('loginError: ', loginError);
+// });
