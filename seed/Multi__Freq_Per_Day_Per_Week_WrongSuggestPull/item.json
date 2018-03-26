@@ -1,0 +1,52 @@
+﻿[
+	{
+		"safety_stock_uom": null,
+		"sys_version": 2,
+		"sys_type_version": 1,
+		"item_name": "thao_item2",
+		"order_method": null,
+		"counting_uoms": [],
+		"item_code": "thao_item2",
+		"category": "inv-cat-012",
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-25T07:20:46.100Z",
+		"reporting_uom": "inv-uom-0004",
+		"store_key": [
+			"store_test_04"
+		],
+		"base_uom": "inv-uom-0001",
+		"unique_name": "thao_item2",
+		"status": "Active",
+		"safety_stock_type": null,
+		"safety_stock_value": null,
+		"id": "thao_item2",
+		"sys_modified_at": "2018-03-25T07:20:48.468Z",
+		"sys_modified_by": "admin__kms_qa5",
+		"sys_id": "5ab74dcec528a4726183137b"
+	},
+	{
+		"safety_stock_uom": null,
+		"sys_version": 2,
+		"sys_type_version": 1,
+		"item_name": "thao_item3",
+		"order_method": null,
+		"counting_uoms": [],
+		"item_code": "thao_item3",
+		"category": "inv-cat-012",
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-25T07:21:05.277Z",
+		"reporting_uom": "inv-uom-0004",
+		"store_key": [
+			"store_test_04"
+		],
+		"base_uom": "inv-uom-0001",
+		"unique_name": "thao_item3",
+		"status": "Active",
+		"safety_stock_type": null,
+		"safety_stock_value": null,
+		"id": "thao_item3",
+		"sys_modified_at": "2018-03-25T07:21:06.987Z",
+		"sys_modified_by": "admin__kms_qa5",
+		"sys_id": "5ab74de1c528a47261831391"
+	}
+]

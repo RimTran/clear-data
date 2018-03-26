@@ -1,0 +1,32 @@
+﻿[
+	{
+		"sys_version": 1,
+		"schedule": "thao_schedule_001",
+		"sys_type_version": 1,
+		"item_id": "thao_item2",
+		"thaw_time": "99:00",
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-25T07:28:24.475Z",
+		"store_key": "store_test_04",
+		"thaw_uom": "inv-uom-0001",
+		"status": "Active",
+		"shelf_life": "99:00",
+		"id": "thao_thaw2",
+		"sys_id": "5ab74f983d953858cf34d9e8"
+	},
+	{
+		"sys_version": 1,
+		"schedule": "thao_schedule_001",
+		"sys_type_version": 1,
+		"item_id": "thao_item3",
+		"thaw_time": "99:00",
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-25T07:28:39.390Z",
+		"store_key": "store_test_04",
+		"thaw_uom": "inv-uom-0001",
+		"status": "Active",
+		"shelf_life": "99:00",
+		"id": "thao_thaw3",
+		"sys_id": "5ab74fa73d953858cf34d9f1"
+	}
+]
