@@ -1,8 +1,8 @@
 const axios = require('axios');
 const getToken = require('./login');
 
-const env = process.env.NODE_ENV || 'dev';
-const namespace = process.env.NAMESPACE || 'kmsdev5';
+const env = process.env.NODE_ENV || 'qa';
+const namespace = process.env.NAMESPACE || 'kms_qa5';
 const BASE_URL = `https://api.bodhi-${env}.io/${namespace}/resources`;
 
 const documents = [

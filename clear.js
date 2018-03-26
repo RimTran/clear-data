@@ -1,8 +1,8 @@
 const axios = require('axios');
 const getToken = require('./login');
 
-const env = process.env.NODE_ENV || 'dev';
-const namespace = process.env.NAMESPACE || 'kmsdev5';
+const env = process.env.NODE_ENV || 'qa';
+const namespace = process.env.NAMESPACE || 'kms_qa5';
 const BASE_URL = `https://api.bodhi-${env}.io/${namespace}/resources`;
 
 const documents = [
@@ -14,8 +14,10 @@ const documents = [
   'InventoryOnHand'
 ];
 
-const clear = ({ resourceName, method = 'DELETE', token }) => axios({
-  url: `${BASE_URL}/${resourceName}`,
+const storeKey = 'store_test_07';
+
+const clear = ({ resourceName, method = 'DELETE', token, storeKey }) => axios({
+  url: `${BASE_URL}/${resourceName}?where`,
   method,
   headers: {
     'Content-Type': 'application/json',
@@ -23,9 +25,10 @@ const clear = ({ resourceName, method = 'DELETE', token }) => axios({
   }
 });
 
-const clearAll = token => documents.map(doc => {
+const clearAll = (token) => documents.map(doc => {
+  const storeKeyCondition = encodeURI(`where = { store_key: {$eq: '${storeKey}'}}`);
   return clear({
-    resourceName: doc,
+    resourceName: `${doc}?${storeKeyCondition}`,
     token
   });
 });
