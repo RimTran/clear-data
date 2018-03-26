@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "clear": "node clear.js",
-    "seed": "node seed.js"
+    "seed": "node seed.js",
+    "test": "npm run clear && npm run seed"
   },
   "keywords": [],
   "author": "",
   "private": true,
   "dependencies": {
-    "request": "*",
     "axios": "*",
+    "build-url": "^1.0.11",
     "colors": "*",
-    "q": "*"
+    "q": "*",
+    "request": "*"
   }
 }

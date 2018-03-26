@@ -1,21 +1,28 @@
 const axios = require('axios');
 const getToken = require('./login');
+const buildUrl = require('build-url');
 
-const env = process.env.NODE_ENV || 'dev';
-const namespace = process.env.NAMESPACE || 'kmsdev5';
+const env = process.env.NODE_ENV || 'qa';
+const namespace = process.env.NAMESPACE || 'kms_qa5';
 const BASE_URL = `https://api.bodhi-${env}.io/${namespace}/resources`;
 
 const documents = [
   'ProductionSuggestedThawQuantityJobLog',
-  'ProductionSuggestedThawItemQuantity',
+  'ProductionSuggestedThawItemPull',
   'InventoryItem',
   'ProductionSchedule',
   'ProductionItemThawSetup',
-  'InventoryOnHand'
+  'InventoryOnHand',
 ];
 
+const storeKey = 'store_test_14';
+
 const clear = ({ resourceName, method = 'DELETE', token }) => axios({
-  url: `${BASE_URL}/${resourceName}`,
+  url: `${BASE_URL}/${resourceName}${buildUrl({
+    queryParams: {
+      storeKey
+    }
+  })}`,
   method,
   headers: {
     'Content-Type': 'application/json',

@@ -1,26 +1,28 @@
 const axios = require('axios');
 const getToken = require('./login');
 
-const env = process.env.NODE_ENV || 'dev';
-const namespace = process.env.NAMESPACE || 'kmsdev5';
+const env = process.env.NODE_ENV || 'qa';
+const namespace = process.env.NAMESPACE || 'kms_qa5';
 const BASE_URL = `https://api.bodhi-${env}.io/${namespace}/resources`;
+
+const dir = './seed/Multi_freq_some_day_per_week_THANG_FIX_BUG';
 
 const documents = [
   {
     resourceName: 'InventoryItem',
-    data: require('./seed/item.json')
+    data: require(dir + '/item.json')
   },
   {
     resourceName: 'ProductionSchedule',
-    data: require('./seed/schedule.json')
+    data: require(dir + '/schedule.json')
   },
   {
     resourceName: 'ProductionItemThawSetup',
-    data: require('./seed/thawsetup.json')
+    data: require(dir + '/thawsetup.json')
   },
   {
     resourceName: 'InventoryOnHand',
-    data: require('./seed/onhand.json')
+    data: require(dir + '/onhand.json')
   }
 ];
 
