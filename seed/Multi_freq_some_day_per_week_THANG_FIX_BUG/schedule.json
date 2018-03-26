@@ -5,7 +5,7 @@
 		"sys_created_by": "admin__kms_qa5",
 		"sys_created_at": "2018-03-25T07:21:55.078Z",
 		"store_key": "store_test_14",
-		"name": "Multi_freq_some_day_per_w",
+		"name": "Multi_freq_some_day_per_w_THANG_FIX_BUG",
 		"unique_name": "multi_freq_some_day_per_w",
 		"status": "Active",
 		"frequencies": [

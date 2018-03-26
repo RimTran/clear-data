@@ -1,7 +1,7 @@
 ﻿[
 	{
 		"sys_version": 1,
-		"schedule": "schedule-id-001",
+		"schedule": "schedule-id-thang-001",
 		"sys_type_version": 1,
 		"item_id": "item-id-thang-001",
 		"thaw_time": "99:00",
@@ -16,7 +16,7 @@
 	},
 	{
 		"sys_version": 1,
-		"schedule": "schedule-id-001",
+		"schedule": "schedule-id-thang-001",
 		"sys_type_version": 1,
 		"item_id": "item-id-thang-002",
 		"thaw_time": "99:00",
