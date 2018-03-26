@@ -20,7 +20,6 @@ const storeKey = 'store_test_14';
 const clear = ({ resourceName, method = 'DELETE', token }) => {
 
   const URL = `${BASE_URL}/${resourceName}?where={"store_key":"${storeKey}"}`;
-  console.log('URL: ', URL);
   return axios({
     url: URL,
 
