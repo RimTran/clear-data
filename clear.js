@@ -30,10 +30,9 @@ const clear = ({ resourceName, method = 'DELETE', token }) => axios({
   }
 });
 
-const clearAll = (token) => documents.map(doc => {
-  const storeKeyCondition = encodeURI(`where = { store_key: {$eq: '${storeKey}'}}`);
+const clearAll = token => documents.map(doc => {
   return clear({
-    resourceName: `${doc}?${storeKeyCondition}`,
+    resourceName: doc,
     token
   });
 });
