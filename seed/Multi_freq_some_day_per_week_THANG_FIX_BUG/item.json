@@ -19,7 +19,7 @@
 		"status": "Active",
 		"safety_stock_type": null,
 		"safety_stock_value": null,
-		"id": "item-id-001",
+		"id": "item-id-thang-001",
 		"sys_modified_at": "2018-03-25T07:20:15.226Z",
 		"sys_modified_by": "admin__kms_qa5",
 		"sys_id": "5ab74dadc528a4726183135b"
@@ -44,7 +44,7 @@
 		"status": "Active",
 		"safety_stock_type": null,
 		"safety_stock_value": null,
-		"id": "item-id-002",
+		"id": "item-id-thang-002",
 		"sys_modified_at": "2018-03-25T07:20:48.468Z",
 		"sys_modified_by": "admin__kms_qa5",
 		"sys_id": "5ab74dcec528a4726183137b"

@@ -1,7 +1,7 @@
 ﻿[
   {
     "store_key": "store_test_14",
-    "id": "on-hand-001",
+    "id": "on-hand-thang-001",
     "item_id": "item-id-001",
     "item_cost": 1.27,
     "theoretical_on_hand": 33,
@@ -279,7 +279,7 @@
   },
   {
     "store_key": "store_test_14",
-    "id": "on-hand-002",
+    "id": "on-hand-thang-002",
     "item_id": "item-id-002",
     "item_cost": 1.27,
     "theoretical_on_hand": 50,
