@@ -1,0 +1,29 @@
+﻿[
+  {
+    "sys_version": 2,
+    "sys_type_version": 2,
+    "sys_created_by": "admin__kms_qa_test",
+    "sys_created_at": "2018-03-27T08:59:29.345Z",
+    "store_key": "store_test",
+    "name": "Demo_1_Item_Daily_Pull",
+    "unique_name": "demo_1_item_daily_pull",
+    "status": "Active",
+    "frequencies": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "frequency_time": "10:00 AM",
+        "is_thaw": true,
+        "is_prep": false
+      }
+    ],
+    "id": "f5f5f469-b825-4a73-9530-8737d13ab6ba"
+  }
+]
