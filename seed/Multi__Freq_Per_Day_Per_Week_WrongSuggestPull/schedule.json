@@ -1,0 +1,60 @@
+﻿[
+	{
+		"sys_version": 1,
+		"sys_type_version": 1,
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-03-26T08:29:40.956Z",
+		"store_key": "store_test_04",
+		"name": "Multi_freq_some_day_per_w",
+		"unique_name": "multi_freq_some_day_per_w",
+		"status": "Active",
+		"frequencies": [
+			{
+				"days": [
+					"Sat"
+				],
+				"frequency_time": "09:00 PM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Sat"
+				],
+				"frequency_time": "11:00 PM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Sun",
+					"Wed",
+					"Fri",
+					"Mon",
+					"Tue"
+				],
+				"frequency_time": "01:00 AM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Fri"
+				],
+				"frequency_time": "07:00 AM",
+				"is_thaw": true,
+				"is_prep": true
+			},
+			{
+				"days": [
+					"Tue"
+				],
+				"frequency_time": "04:00 AM",
+				"is_thaw": true,
+				"is_prep": true
+			}
+		],
+		"id": "thao_schedule_001",
+		"sys_id": "5ab8af74c528a4726184929a"
+	}
+]
