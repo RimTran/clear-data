@@ -1,18 +1,17 @@
 {
-  "name": "beforeTest",
-  "version": "1.0.0",
-  "description": "",
+  "name": "clear-data",
+  "version": "1.0.1",
+  "description": "Support reseed data",
   "main": "index.js",
   "scripts": {
+    "qa": "set _ENV=qa5 && node src/index.js",
+    "dev": "set _ENV=dev5 && node src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "ThangTran",
   "private": true,
   "dependencies": {
     "axios": "*",
-    "build-url": "^1.0.11",
-    "colors": "*",
-    "q": "*",
-    "request": "*"
+    "dotenv": "^5.0.1"
   }
 }
