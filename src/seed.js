@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const dir = '../seed/Multi_freq_some_day_per_week_THANG_2Item_Use_1Schedule';
+const dir = '../seed/Fetch_Forecast_And_Transaction__THANG_V1';
 
 const documents = [
   {
@@ -18,6 +18,10 @@ const documents = [
   {
     resourceName: 'InventoryOnHand',
     data: require(dir + '/onhand.json')
+  },
+  {
+    resourceName: 'InventoryForecastQuantity',
+    data: require(dir + '/forecast.json')
   }
 ];
 
