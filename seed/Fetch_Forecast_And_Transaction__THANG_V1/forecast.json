@@ -3,7 +3,7 @@
     "id": "forecast_thang_id_001",
     "store_number": "store-14",
     "store_name": "Store 14",
-    "time_zone": "14",
+    "timezone": "14",
     "business_day": "2018-03-30T09:32:21.457Z",
     "start_timestamp_utc": "2018-03-30T09:32:21.457Z",
     "end_timestamp_utc": "2018-03-30T09:32:21.457Z",
