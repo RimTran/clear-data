@@ -1,0 +1,17 @@
+﻿[
+	{
+		"sys_version": 1,
+		"schedule": "83e01e2d-f5e6-41e6-84a9-00633dd10324",
+		"sys_type_version": 1,
+		"item_id": "4c8548b0-371e-11e8-80d4-fb256a52be92",
+		"thaw_time": "24:00",
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-04-03T09:23:10.925Z",
+		"store_key": "store_test_03",
+		"thaw_uom": "inv-uom-0006",
+		"status": "Active",
+		"shelf_life": "99:00",
+		"id": "3e457f47-0fc2-4086-ba77-f4ea13068e1c",
+		"sys_id": "5ac347fe3d9538530d3ad7a8"
+	}
+]

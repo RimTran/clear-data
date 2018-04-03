@@ -3,10 +3,10 @@ const axios = require('axios');
 const resourceAsClear = [
   'ProductionSuggestedThawQuantityJobLog',
   'ProductionSuggestedThawItemPull',
-  'InventoryItem',
+  //'InventoryItem',
   'ProductionSchedule',
   'ProductionItemThawSetup',
-  'InventoryOnHand',
+  //'InventoryOnHand',
 ];
 
 function clear() {
