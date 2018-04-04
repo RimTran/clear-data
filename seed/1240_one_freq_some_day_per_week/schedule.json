@@ -11,9 +11,9 @@
 		"frequencies": [
 			{
 				"days": [
-					"Tue",
-					"Thu",
-					"Sat"
+					"Wed",
+					"Fri",
+					"Sun"
 				],
 				"frequency_time": "10:00 AM",
 				"is_thaw": true,
