@@ -1,0 +1,60 @@
+﻿[
+	{
+		"sys_version": 2,
+		"sys_type_version": 1,
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-04-03T09:44:25.220Z",
+		"store_key": "store_test_03",
+		"name": "1240_Schedule_03",
+		"unique_name": "1240_schedule_03",
+		"status": "Active",
+		"frequencies": [
+			{
+				"days": [
+					"Mon",
+					"Tue",
+					"Wed",
+					"Thu",
+					"Fri",
+					"Sat",
+					"Sun"
+				],
+				"frequency_time": "06:00 PM",
+				"is_thaw": true,
+				"is_prep": false
+			},
+			{
+				"days": [
+					"Mon",
+					"Tue",
+					"Wed",
+					"Thu",
+					"Fri",
+					"Sat",
+					"Sun"
+				],
+				"frequency_time": "08:00 PM",
+				"is_thaw": true,
+				"is_prep": false
+			},
+			{
+				"days": [
+					"Mon",
+					"Tue",
+					"Wed",
+					"Thu",
+					"Fri",
+					"Sat",
+					"Sun"
+				],
+				"frequency_time": "10:00 PM",
+				"is_thaw": true,
+				"is_prep": false
+			}
+		],
+		"id": "45bc8eb8-910f-44f6-8ba5-423e62be42f0",
+		"sys_modified_at": "2018-04-03T09:45:31.853Z",
+		"sys_modified_by": "admin__kms_qa5",
+		"sys_id": "5ac34cf9c528a45265e5be77"
+	}
+]

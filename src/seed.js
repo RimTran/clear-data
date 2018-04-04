@@ -1,6 +1,8 @@
 const axios = require('axios');
 
-const dir = '../seed/Fetch_Forecast_And_Transaction__THANG_V1';
+//const dir = '../seed/Multi_freq_some_day_per_week_THANG_2Item_Use_1Schedule';
+//const dir = '../seed/1240_one_freq_some_day_per_week';
+const dir = '../seed/1240_one_freq_per_day_whole_week';
 
 const documents = [
   {
@@ -19,10 +21,14 @@ const documents = [
     resourceName: 'InventoryOnHand',
     data: require(dir + '/onhand.json')
   },
-  {
-    resourceName: 'InventoryForecastQuantity',
-    data: require(dir + '/forecast.json')
-  }
+    {
+        resourceName: 'ProductionSuggestedThawQuantityJobLog',
+        data: require(dir + '/thawlog.json')
+    },
+    {
+        resourceName: 'ProductionSuggestedThawItemPull',
+        data: require(dir + '/suggestpull.json')
+    },
 ];
 
 module.exports = function seed() {

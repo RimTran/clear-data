@@ -1,0 +1,25 @@
+﻿[
+	{
+		"sys_version": 2,
+		"sys_type_version": 1,
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-04-03T06:17:18.922Z",
+		"store_key": "store_test_03",
+		"name": "1240_Schedule",
+		"unique_name": "1240_schedule",
+		"status": "Active",
+		"frequencies": [
+			{
+				"days": [
+					"Wed",
+					"Fri",
+					"Sun"
+				],
+				"frequency_time": "10:00 AM",
+				"is_thaw": true,
+				"is_prep": false
+			}
+		],
+		"id": "dfc1aaad-e2c9-4866-ad44-ac18b1121635"
+	}
+]

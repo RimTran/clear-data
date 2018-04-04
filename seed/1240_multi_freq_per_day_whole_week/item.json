@@ -1,0 +1,27 @@
+﻿[
+	{
+		"safety_stock_uom": null,
+		"sys_version": 3,
+		"sys_type_version": 1,
+		"item_name": "1240_SC03",
+		"order_method": null,
+		"counting_uoms": [],
+		"item_code": "1240_SC03",
+		"category": "inv-cat-006",
+		"sys_created_by": "admin__kms_qa5",
+		"sys_created_at": "2018-04-03T09:40:04.076Z",
+		"reporting_uom": "inv-uom-0010",
+		"store_key": [
+			"store_test_03"
+		],
+		"base_uom": "inv-uom-0009",
+		"unique_name": "1240_sc03",
+		"status": "Active",
+		"safety_stock_type": null,
+		"safety_stock_value": null,
+		"id": "06e2ccb0-3723-11e8-80d4-fb256a52be92",
+		"sys_modified_at": "2018-04-03T09:46:55.793Z",
+		"sys_modified_by": "admin__kms_qa5",
+		"sys_id": "5ac34bf43d9538530d3ae63a"
+	}
+]
