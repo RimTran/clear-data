@@ -1,12 +1,13 @@
 const axios = require('axios');
 
 const resourceAsClear = [
-  'ProductionSuggestedThawQuantityJobLog',
-  'ProductionSuggestedThawItemPull',
-  //'InventoryItem',
+  'ProductionInvBaseUnit',
+  'ProductionInvCategory',
+  'ProductionItemDefinition',
+  // 'InventoryItem',
   'ProductionSchedule',
-  'ProductionItemThawSetup',
-  //'InventoryOnHand',
+  // 'ProductionItemThawSetup',
+  // 'InventoryOnHand',
 ];
 
 function clear() {
@@ -15,7 +16,8 @@ function clear() {
   const storeKey = this.storeKey;
 
   const singleClear = ({resourceName}) => {
-    const url = `${baseUrl}/${resourceName}?where={"store_key":"${storeKey}"}`;
+    // const url = `${baseUrl}/${resourceName}?where={"store_key":"${storeKey}"}`;
+    const url = `${baseUrl}/${resourceName}`;
     return axios({
       method: 'DELETE',
       url,

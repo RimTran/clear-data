@@ -27,6 +27,6 @@ require('./clear')
 
   })
   .catch((err) => {
-    console.log('======== CLEAR ERROR =======');
+    console.log('======== ERROR =======');
     console.log('err : ', err);
   });

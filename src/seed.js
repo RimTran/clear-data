@@ -2,42 +2,41 @@ const axios = require('axios');
 
 //const dir = '../seed/Multi_freq_some_day_per_week_THANG_2Item_Use_1Schedule';
 //const dir = '../seed/1240_one_freq_some_day_per_week';
-const dir = '../seed/1240_one_freq_per_day_whole_week';
+const dir = '../seed/Demo_S13_Recipe';
 
 const documents = [
   {
-    resourceName: 'InventoryItem',
-    data: require(dir + '/item.json')
+    resourceName: 'ProductionInvBaseUnit',
+    data: require(dir + '/production-baseunit.json')
+  },
+  {
+    resourceName: 'ProductionInvCategory',
+    data: require(dir + '/production-category.json')
+  },
+  {
+    resourceName: 'ProductionItemDefinition',
+    data: require(dir + '/production-item.json')
   },
   {
     resourceName: 'ProductionSchedule',
-    data: require(dir + '/schedule.json')
-  },
-  {
-    resourceName: 'ProductionItemThawSetup',
-    data: require(dir + '/thawsetup.json')
-  },
-  {
-    resourceName: 'InventoryOnHand',
-    data: require(dir + '/onhand.json')
-  },
-    {
-        resourceName: 'ProductionSuggestedThawQuantityJobLog',
-        data: require(dir + '/thawlog.json')
-    },
-    {
-        resourceName: 'ProductionSuggestedThawItemPull',
-        data: require(dir + '/suggestpull.json')
-    },
+    data: require(dir + '/production-schedule.json')
+  }
+  // {
+  //     resourceName: 'ProductionSuggestedThawQuantityJobLog',
+  //     data: require(dir + '/thawlog.json')
+  // },
+  // {
+  //     resourceName: 'ProductionSuggestedThawItemPull',
+  //     data: require(dir + '/itempull.json')
+  // },
 ];
 
 module.exports = function seed() {
-  const baseUrl = this.baseUrl;
   const token = this.token;
 
   const singlePost = ({ resourceName, data }) => {
 
-    const url = `${baseUrl}/${resourceName}`;
+    const url = 'http://localhost:5000/inv_dev_uat/exeCommand';
     return axios({
       url,
       method: 'POST',
@@ -45,7 +44,16 @@ module.exports = function seed() {
         'Content-Type': 'application/json',
         'Cookie': `ID_TOKEN=${token}`
       },
-      data
+      data: {
+        service: "debugService",
+        funcName: "bulkInsert",
+        args: [{
+          namespace: this.namespace,
+          type: resourceName,
+          reqData: data
+        }],
+        isCallbackFunc: false
+      }
     });
   };
 
